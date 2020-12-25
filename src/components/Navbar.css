@@ -1,24 +1,32 @@
 .navbar {
+    background-color: #1A1a1a;
     height: 80px;
-    width: 100%;
-    position: fixed;
-    background: #1a1a1a;
     color: white;
+    width: 100%;
     z-index: infinite;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: fixed;
+}
+
+.menu {
+    display: none;
 }
 
 .logo {
     float: left;
     font-size: larger;
     margin-left: 130px;
+    margin-top: 25px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
 }
 
 ul {
     margin-right: 130px;
     display: flex;
+    margin-top: 30px;
 }
 
 li {
@@ -44,7 +52,7 @@ a:hover {
 
 /* Tablets */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 442px) and (max-width: 1024px) {
     ul {
         display: none;
     }
@@ -52,6 +60,11 @@ a:hover {
     .bars {
         display: initial;
         margin-right: 130px;
+        margin-top: 30px;
+    }
+
+    .menu {
+        display: initial;
     }
 }
-  
+
