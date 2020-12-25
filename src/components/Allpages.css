@@ -1,0 +1,40 @@
+#home {
+    height: 1300px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    color: white;
+
+}
+
+.intro {
+    margin-top: 150px;
+    margin-left: 130px;
+    font-size: larger;
+}
+
+.button {
+    margin-top: 30px;
+}
+
+.button > a {
+    background: rgb(0, 140, 255);
+    padding: 10px;
+    margin-left: 130px;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    border: 1px solid rgb(0, 140, 255);
+}
+
+.button > a:hover {
+    transition: .3s;
+    background: #1a1a1a;
+    color: white;
+    border: 1px solid rgb(0, 140, 255);
+}
+
+
+#about {
+    height: 1300px;
+}

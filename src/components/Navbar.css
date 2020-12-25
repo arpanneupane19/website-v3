@@ -3,7 +3,7 @@
     height: 80px;
     color: white;
     width: 100%;
-    z-index: infinite;
+    z-index: 999;
     position: fixed;
 }
 
@@ -15,7 +15,7 @@
     float: left;
     font-size: larger;
     margin-left: 130px;
-    margin-top: 25px;
+    margin-top: 27px;
 }
 
 nav {
@@ -33,12 +33,12 @@ li {
     padding-left: 40px;
 }
 
-a {
+li > a {
     color: white;
     text-decoration: none;
 }
 
-a:hover {
+li > a:hover {
     color: rgb(0, 140, 255);
     transition: .3s;
 }
@@ -60,7 +60,7 @@ a:hover {
     .bars {
         display: initial;
         margin-right: 130px;
-        margin-top: 30px;
+        margin-top: 33px;
     }
 
     .menu {
