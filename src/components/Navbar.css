@@ -1,0 +1,57 @@
+.navbar {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    background: #1a1a1a;
+    color: white;
+    z-index: infinite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    float: left;
+    font-size: larger;
+    margin-left: 130px;
+}
+
+ul {
+    margin-right: 130px;
+    display: flex;
+}
+
+li {
+    padding-left: 40px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(0, 140, 255);
+    transition: .3s;
+}
+
+.bars {
+    display: none;
+    cursor: pointer;
+}
+
+
+
+/* Tablets */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    ul {
+        display: none;
+    }
+
+    .bars {
+        display: initial;
+        margin-right: 130px;
+    }
+}
+  
