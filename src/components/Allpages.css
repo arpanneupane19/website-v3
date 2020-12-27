@@ -4,12 +4,14 @@
     flex-direction: column;
     background-color: #1a1a1a;
     color: white;
+    width: 100%;
 
 }
 
 .intro {
     margin-top: 150px;
-    margin-left: 130px;
+    padding-left: 130px;
+    padding-right: 100px;
     font-size: larger;
 }
 
@@ -37,4 +39,124 @@
 
 #about {
     height: 1300px;
+    display: flex;
+
+}
+
+.about-info {
+    margin-top: 150px;
+    margin-left: 100px;
+    font-size: larger;
+    width: 50%;
+}
+
+.about-info > p > a {
+    text-decoration: none;
+    color: #0275D8;
+}
+
+.skills-info {
+    margin-top: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: larger;
+    width: 50%;
+}
+
+.languages {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.frameworks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.python {
+    text-align: center;
+    font-weight: bold;
+    background-color: #4DECBC26;
+    margin-right: 10px;
+    padding: 4px;
+    margin-top: 6px;
+    border-radius: 4px;
+    border: 2px solid green;
+}
+
+.js {
+    text-align: center;
+    font-weight: bold;
+    background-color: #4DECBC26;
+    margin-right: 10px;
+    padding: 4px;
+    margin-top: 6px;
+    border-radius: 4px;
+    border: 2px solid green;
+}
+
+.html-and-css {
+    text-align: center;
+    font-weight: bold;
+    background-color: #4DECBC26;
+    margin-right: 10px;
+    padding: 4px;
+    margin-top: 6px;
+    border-radius: 4px;
+    border: 2px solid green;
+}
+
+.flask {
+    text-align: center;
+    font-weight: bold;
+    background-color: #4DECBC26;
+    margin-right: 10px;
+    padding: 4px;
+    margin-top: 6px;
+    border-radius: 4px;
+    border: 2px solid green;
+}
+
+.bootstrap {
+    text-align: center;
+    font-weight: bold;
+    background-color: #DBDCA826;
+    margin-right: 10px;
+    padding: 4px;
+    margin-top: 6px;
+    border-radius: 4px;
+    border: 2px solid rgb(170, 170, 0);
+}
+
+.react {
+    text-align: center;
+    font-weight: bold;
+    background-color: #DBDCA826;
+    margin-right: 10px;
+    padding: 4px;
+    margin-top: 6px;
+    border-radius: 4px;
+    border: 2px solid rgb(170, 170, 0);
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .intro {
+        margin-left: 0px;
+    }
+    #about {
+        flex-direction: column;
+    }
+
+    .skills-info {
+        margin-top: 50px;
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+
+    .about-info {
+        width: 70%;
+        margin-right: 80px;
+        margin-left: 80px;
+    }
 }
