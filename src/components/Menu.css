@@ -16,7 +16,7 @@
     
     .menu-links > a {
         margin: 10px;
-    
+        text-decoration: none;
         color: white;
         font-size: 14px;
     }
