@@ -50,7 +50,7 @@
     width: 50%;
 }
 
-.about-info > p > a {
+.about-info > label > a {
     text-decoration: none;
     color: #0275D8;
 }
@@ -63,6 +63,10 @@
     width: 50%;
 }
 
+.skills-info > label {
+    font-weight: bold;
+}
+
 .languages {
     display: flex;
     flex-wrap: wrap;
@@ -73,7 +77,9 @@
     flex-wrap: wrap;
 }
 
-.python {
+
+
+.proficient {
     text-align: center;
     font-weight: bold;
     background-color: #4DECBC26;
@@ -84,51 +90,7 @@
     border: 2px solid green;
 }
 
-.js {
-    text-align: center;
-    font-weight: bold;
-    background-color: #4DECBC26;
-    margin-right: 10px;
-    padding: 4px;
-    margin-top: 6px;
-    border-radius: 4px;
-    border: 2px solid green;
-}
-
-.html-and-css {
-    text-align: center;
-    font-weight: bold;
-    background-color: #4DECBC26;
-    margin-right: 10px;
-    padding: 4px;
-    margin-top: 6px;
-    border-radius: 4px;
-    border: 2px solid green;
-}
-
-.flask {
-    text-align: center;
-    font-weight: bold;
-    background-color: #4DECBC26;
-    margin-right: 10px;
-    padding: 4px;
-    margin-top: 6px;
-    border-radius: 4px;
-    border: 2px solid green;
-}
-
-.bootstrap {
-    text-align: center;
-    font-weight: bold;
-    background-color: #DBDCA826;
-    margin-right: 10px;
-    padding: 4px;
-    margin-top: 6px;
-    border-radius: 4px;
-    border: 2px solid rgb(170, 170, 0);
-}
-
-.react {
+.intermediate {
     text-align: center;
     font-weight: bold;
     background-color: #DBDCA826;
@@ -155,7 +117,7 @@
     }
 
     .about-info {
-        width: 70%;
+        width: 75%;
         margin-right: 80px;
         margin-left: 80px;
     }
