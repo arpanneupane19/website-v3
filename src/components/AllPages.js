@@ -35,31 +35,34 @@ function AllPages() {
             <section id='about'>
                 <div className='about-info'>
                     <h2>About Me</h2><br></br>
-                    <p>Hello there! My name is Arpan Neupane and I am a 13 year old programmer.
+                    <label>Hello there! My name is Arpan Neupane and I am a 13 year old programmer.
                         My interests are in web development, and I mainly use Python as my backend.
                         I also have created games using Python's Pygame library and GUI applications with Tkinter.
                         I enjoy creating apps that can help people, make every day life easier, and make it fun.
                         I'm always looking forward to improve my applications.
-                    </p><br></br>
-                    <p> 
-                        If you have any questions or comments regarding my apps, please feel free to contact me at <a href="mailto:arpanneupane19@gmail.com" target='__blank'>arpanneupane19@gmail.com</a> or by clicking the mail icon on the sidebar.
-                    </p>
+                    </label><br></br><br></br>
+                    <label> 
+                        If you have any questions or comments regarding my apps, please feel
+                        free to contact me at <a href="mailto:arpanneupane19@gmail.com" target='__blank'>arpanneupane19@gmail.com</a> or by 
+                        clicking the mail icon on the sidebar.
+                    </label>
                 </div>
 
                 <div className='skills-info'>
                     <h2>Skills</h2><br></br>
-                    <h4>Languages</h4>
+                    <label>Languages</label>
                     <div className='languages'>
-                        <p className='python'>Python</p>
-                        <p className='js'>JavaScript</p>
-                        <p className='html-and-css'>HTML/CSS</p>
+                        <label className='proficient'>Python</label>
+                        <label className='proficient'>JavaScript</label>
+                        <label className='proficient'>HTML/CSS</label>
                     </div><br></br>
 
-                    <h4>Frameworks</h4>
+                    <label>Frameworks/Libraries</label>
                     <div className='frameworks'>
-                        <p className='flask'>Flask</p>
-                        <p className='bootstrap'>Bootstrap</p>
-                        <p className='react'>React</p>
+                        <label className='proficient'>Flask</label>
+                        <label className='proficient'>Pygame</label>
+                        <label className='intermediate'>Bootstrap</label>
+                        <label className='intermediate'>React</label>
                     </div>
                 </div>
 
