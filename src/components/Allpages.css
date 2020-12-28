@@ -1,5 +1,5 @@
 #home {
-    height: 1300px;
+    height: 1390px;
     display: flex;
     flex-direction: column;
     background-color: #1a1a1a;
@@ -50,7 +50,7 @@
 
 .about-info {
     margin-top: 150px;
-    margin-left: 100px;
+    margin-left: 130px;
     font-size: larger;
     width: 50%;
 }
@@ -116,7 +116,35 @@
     border: 2px solid rgb(170, 170, 0);
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+    .intro {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .button > a {
+        margin-left: 100px;
+    }
+    #about {
+        flex-direction: column;
+    }
+
+    .skills-info {
+        width: 70%;
+        margin-top: 50px;
+        margin-right: 80px;
+        margin-left: 75px;
+    }
+
+    .about-info {
+        width: 70%;
+        margin-right: 80px;
+        margin-left: 75px;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
 
     .intro {
         padding-left: 100px;
@@ -134,12 +162,48 @@
         width: 70%;
         margin-top: 50px;
         margin-right: 80px;
-        margin-left: 80px;
+        margin-left: 65px;
     }
 
     .about-info {
         width: 70%;
         margin-right: 80px;
-        margin-left: 80px;
+        margin-left: 70px;
     }
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .intro {
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .button {
+        text-align: center;
+    }
+
+    .button > a {
+        margin-left: 0px;
+        text-align: center;
+    }
+    #about {
+        flex-direction: column;
+    }
+
+    .skills-info {
+        width: 81%;
+        margin-top: 50px;
+        margin-right: 80px;
+        margin-left: 50px;
+    }
+
+    .about-info {
+        width: 70%;
+        margin-left: 50px;
+    }
+
+    
 }
