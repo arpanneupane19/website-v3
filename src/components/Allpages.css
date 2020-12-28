@@ -15,6 +15,11 @@
     font-size: larger;
 }
 
+.name {
+    font-size: 1.6em;
+    font-weight: bolder;
+}
+
 .button {
     margin-top: 30px;
 }
@@ -50,7 +55,12 @@
     width: 50%;
 }
 
-.about-info > label > a {
+.about-info > label {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.about-info > p > a {
     text-decoration: none;
     color: #0275D8;
 }
@@ -63,7 +73,12 @@
     width: 50%;
 }
 
-.skills-info > label {
+.skills-header {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.lang-and-fw {
     font-weight: bold;
 }
 
@@ -104,20 +119,26 @@
 @media (min-width: 481px) and (max-width: 768px) {
 
     .intro {
-        margin-left: 0px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .button > a {
+        margin-left: 100px;
     }
     #about {
         flex-direction: column;
     }
 
     .skills-info {
+        width: 70%;
         margin-top: 50px;
         margin-right: 80px;
         margin-left: 80px;
     }
 
     .about-info {
-        width: 75%;
+        width: 70%;
         margin-right: 80px;
         margin-left: 80px;
     }
