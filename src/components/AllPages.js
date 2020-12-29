@@ -1,7 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Navbar from './Navbar';
 import Typewriter from 'typewriter-effect';
-import './AllPages.css'
+import './AllPages.css';
+import {BloggyModal, TodosModal, WebsiteModal, GamesModal, PWGenModal, AirQMModal, YTModal} from './Modal';
 import bloggy from './img/bloggy.png';
 import todos from './img/todos.png';
 import airqm from './img/airqm.png';
@@ -11,8 +12,39 @@ import pwgen from './img/pwgen.png';
 
 function AllPages() {
     const strings = ['web apps.', 'GUIs.', 'React.', 'Python.', 'Flask.']
+
+    // Bloggy hooks
+    const [showBloggy, setShowBloggy] = useState(false);
+    const closeBloggy = () => setShowBloggy(false);
+
+    // Todos hooks
+    const [showTodos, setShowTodos] = useState(false);
+    const closeTodos = () => setShowTodos(false);
+
+    // Site hooks
+    const [showSite, setShowSite] = useState(false);
+    const closeSite = () => setShowSite(false);
+
+    // Games hooks
+    const [showGames, setShowGames] = useState(false);
+    const closeGames = () => setShowGames(false);
+
+    // PWGen hooks
+    const [showPWGen, setShowPWGen] = useState(false);
+    const closePWGen = () => setShowPWGen(false);
+
+    // AirQM hooks
+    const [showAirQM, setShowAirQM] = useState(false);
+    const closeAirQM = () => setShowAirQM(false);
+
+    // YT Clone hooks
+    const [showYT, setShowYT] = useState(false);
+    const closeYT = () => setShowYT(false);
+
+
     return (
         <div>
+            {showBloggy || showTodos || showSite || showGames || showPWGen || showAirQM || showYT ? <div onClick={() => setShowBloggy(false) || setShowTodos(false) || setShowSite(false) || setShowGames(false) || setShowPWGen(false) || setShowAirQM(false) || setShowYT(false)} className='backdrop'></div>: null}
             <Navbar/>
 
             {/* Home */}
@@ -80,7 +112,7 @@ function AllPages() {
             <section id='projects'>
                 <label className='projects-header'>Projects</label><br></br><br></br>
                 <div className='projects'>
-                    <div className='app'>
+                    <div className='app' onClick={() => setShowBloggy(true)}>
                         <label>Bloggy</label>
                         <img src={bloggy} alt='website'/>
                         <div className='tech-used'>
@@ -89,7 +121,7 @@ function AllPages() {
                             <label className='tool'>SQLite</label>
                         </div>
                     </div>
-                    <div className='app'>
+                    <div className='app' onClick={() => setShowTodos(true)}>
                         <label>Todos</label>
                         <img src={todos} alt='website'/>
                         <div className='tech-used'>
@@ -98,7 +130,7 @@ function AllPages() {
                             <label className='tool'>SQLite</label>
                         </div>
                     </div>
-                    <div className='app'>
+                    <div className='app' onClick={() => setShowSite(true)}>
                         <label>This Website</label>
                         <img src={site} alt='website'/>
                         <div className='tech-used'>
@@ -106,7 +138,7 @@ function AllPages() {
                             <label className='tool'>React Router</label>
                         </div>
                     </div>
-                    <div className='app'>
+                    <div className='app' onClick={() => setShowYT(true)}>
                         <label>YouTube Frontend Clone</label>
                         <img src={ytclone} alt='website'/>
                         <div className='tech-used'>
@@ -115,7 +147,7 @@ function AllPages() {
                             <label className='tool'>Firebase</label>
                         </div>
                     </div>           
-                    <div className='app'>
+                    <div className='app' onClick={() => setShowAirQM(true)}>
                         <label>Air Quality Monitor</label>
                         <img src={airqm} alt='website'/>
                         <div className='tech-used'>
@@ -124,7 +156,7 @@ function AllPages() {
                             <label className='tool'>API</label>
                         </div>
                     </div>     
-                    <div className='app'>
+                    <div className='app' onClick={() => setShowPWGen(true)}>
                         <label>Password Generator</label>
                         <img src={pwgen} alt='website'/>
                         <div className='tech-used'>
@@ -135,6 +167,35 @@ function AllPages() {
                     </div>    
                 </div>
             </section>
+            <BloggyModal
+                showBloggy={showBloggy}
+                closeBloggy={closeBloggy}
+			/>
+            <TodosModal
+				showTodos={showTodos}
+                closeTodos={closeTodos}
+            />
+            <WebsiteModal
+                showSite={showSite}
+                closeSite={closeSite}
+            />
+            <GamesModal
+                showGames={showGames}
+                closeGames={closeGames}
+            />
+            <PWGenModal
+                showPWGen={showPWGen}
+                closePWGen={closePWGen}
+            />
+            <AirQMModal
+                showAirQM={showAirQM}
+                closeAirQM={closeAirQM}
+            />
+            <YTModal
+                showYT={showYT}
+                closeYT={closeYT}
+            />
+
 
             {/* Contact */}
             <section id='contact'>
