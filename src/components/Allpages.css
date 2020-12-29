@@ -126,8 +126,8 @@
 
 #projects {
     height: 1300px;
-    background-color: #1a1a1a;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .projects-header {  
@@ -142,12 +142,49 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    height: 400px;
 }
 
 .projects > .app {
-    border: 1px solid white;
-    border-radius: 4px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.app > img {
+    width: 270px;
+    object-fit: contain;
+}
+
+.app > label {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.tech-used {
+    display: flex;
+    justify-content: center;
+}
+
+.tool {
+    text-align: center;
+    font-weight: bold;
+    background-color: #F1FAEEDB;
+    margin-right: 10px;
     padding: 4px;
+    margin-top: 6px;
+    border-radius: 4px;
+    border: 2px solid #00a1a7;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
