@@ -67,10 +67,17 @@ function AllPages() {
                 </div>
 
             </section>
+
+            <div className='parallax'></div>
         
             {/* Projects */}
             <section id='projects'>
+                <label className='projects-header'>Projects</label><br></br><br></br>
 
+                <div className='projects'>
+                    <div className='app'>
+                    </div>
+                </div>
             </section>
 
             {/* Contact */}

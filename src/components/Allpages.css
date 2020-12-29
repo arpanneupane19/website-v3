@@ -4,8 +4,6 @@
     flex-direction: column;
     background-color: #1a1a1a;
     color: white;
-    width: 100%;
-
 }
 
 .intro {
@@ -114,6 +112,42 @@
     margin-top: 6px;
     border-radius: 4px;
     border: 2px solid rgb(170, 170, 0);
+}
+
+.parallax {
+    background: url('./img/computer.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(40%);
+}
+
+#projects {
+    height: 1300px;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.projects-header {  
+    padding-top: 150px;
+    font-size: 1.5em;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects > .app {
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 4px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
