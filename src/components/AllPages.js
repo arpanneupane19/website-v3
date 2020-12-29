@@ -2,6 +2,12 @@ import React from 'react'
 import Navbar from './Navbar';
 import Typewriter from 'typewriter-effect';
 import './AllPages.css'
+import bloggy from './img/bloggy.png';
+import todos from './img/todos.png';
+import airqm from './img/airqm.png';
+import ytclone from './img/ytclone.png'
+import site from './img/site.png';
+import pwgen from './img/pwgen.png';
 
 function AllPages() {
     const strings = ['web apps.', 'GUIs.', 'React.', 'Python.', 'Flask.']
@@ -73,10 +79,60 @@ function AllPages() {
             {/* Projects */}
             <section id='projects'>
                 <label className='projects-header'>Projects</label><br></br><br></br>
-
                 <div className='projects'>
                     <div className='app'>
+                        <label>Bloggy</label>
+                        <img src={bloggy} alt='website'/>
+                        <div className='tech-used'>
+                            <label className='tool'>Python</label>
+                            <label className='tool'>Flask</label>
+                            <label className='tool'>SQLite</label>
+                        </div>
                     </div>
+                    <div className='app'>
+                        <label>Todos</label>
+                        <img src={todos} alt='website'/>
+                        <div className='tech-used'>
+                            <label className='tool'>Python</label>
+                            <label className='tool'>Flask</label>
+                            <label className='tool'>SQLite</label>
+                        </div>
+                    </div>
+                    <div className='app'>
+                        <label>This Website</label>
+                        <img src={site} alt='website'/>
+                        <div className='tech-used'>
+                            <label className='tool'>React</label>
+                            <label className='tool'>React Router</label>
+                        </div>
+                    </div>
+                    <div className='app'>
+                        <label>YouTube Frontend Clone</label>
+                        <img src={ytclone} alt='website'/>
+                        <div className='tech-used'>
+                            <label className='tool'>React</label>
+                            <label className='tool'>React Router</label>
+                            <label className='tool'>Firebase</label>
+                        </div>
+                    </div>           
+                    <div className='app'>
+                        <label>Air Quality Monitor</label>
+                        <img src={airqm} alt='website'/>
+                        <div className='tech-used'>
+                            <label className='tool'>Python</label>
+                            <label className='tool'>Tkinter</label>
+                            <label className='tool'>API</label>
+                        </div>
+                    </div>     
+                    <div className='app'>
+                        <label>Password Generator</label>
+                        <img src={pwgen} alt='website'/>
+                        <div className='tech-used'>
+                            <label className='tool'>JavaScript</label>
+                            <label className='tool'>HTML</label>
+                            <label className='tool'>CSS</label>
+                        </div>
+                    </div>    
                 </div>
             </section>
 
