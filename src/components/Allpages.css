@@ -29,6 +29,10 @@
     font-size: xx-large;
 }
 
+.intro > p {
+    font-size: larger;
+}
+
 .name {
     font-size: 1.6em;
     font-weight: bolder;
@@ -97,10 +101,25 @@
 
 .languages {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .frameworks {
+    display: flex;
+    flex-direction: column;
+}
+
+.proficient-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intermediate-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.beginner-row {
     display: flex;
     flex-wrap: wrap;
 }
@@ -118,6 +137,7 @@
     border: 2px solid green;
 }
 
+
 .intermediate {
     text-align: center;
     font-weight: bold;
@@ -127,6 +147,17 @@
     margin-top: 6px;
     border-radius: 4px;
     border: 2px solid rgb(170, 170, 0);
+}
+
+.beginner {
+    text-align: center;
+    font-weight: bold;
+    background-color: #B6BBBB26;
+    margin-right: 10px;
+    padding: 4px;
+    margin-top: 6px;
+    border-radius: 4px;
+    border: 2px solid gray;
 }
 
 .parallax {
@@ -140,7 +171,7 @@
 }
 
 #projects {
-    height: 1300px;
+    height: 1200px;
     background-color: white;
     color: black;
 }
@@ -198,6 +229,11 @@
     margin-top: 6px;
     border-radius: 4px;
     border: 2px solid #00a1a7;
+}
+
+.ending-msg {
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
