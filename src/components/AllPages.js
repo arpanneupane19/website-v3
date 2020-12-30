@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Navbar from './Navbar';
 import Typewriter from 'typewriter-effect';
-import '../components/AllPages.css';
+import '../components/Allpages.css';
 import {BloggyModal, TodosModal, WebsiteModal, GamesModal, PWGenModal, AirQMModal, YTModal} from './Modal';
 import bloggy from './img/bloggy.png';
 import todos from './img/todos.png';
