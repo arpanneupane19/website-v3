@@ -1,14 +1,15 @@
 import React, {useState} from 'react'
-import Navbar from './Navbar';
 import Typewriter from 'typewriter-effect';
 import '../components/Allpages.css';
 import {BloggyModal, TodosModal, WebsiteModal, GamesModal, PWGenModal, AirQMModal, YTModal} from './Modal';
+import Fade from 'react-reveal/Fade';
 import bloggy from './img/bloggy.png';
 import todos from './img/todos.png';
 import airqm from './img/airqm.png';
 import ytclone from './img/ytclone.png'
 import site from './img/site.png';
 import pwgen from './img/pwgen.png';
+import games from './img/games.png';
 
 function AllPages() {
     const strings = ['web apps.', 'GUIs.', 'React.', 'Python.', 'Flask.']
@@ -45,13 +46,13 @@ function AllPages() {
     return (
         <div>
             {showBloggy || showTodos || showSite || showGames || showPWGen || showAirQM || showYT ? <div onClick={() => setShowBloggy(false) || setShowTodos(false) || setShowSite(false) || setShowGames(false) || setShowPWGen(false) || setShowAirQM(false) || setShowYT(false)} className='backdrop'></div>: null}
-            <Navbar/>
 
             {/* Home */}
             <section id='home'>
                 <div className='intro'>
                     <label>Hello, I am</label><br></br>
                     <label className='name'>Arpan Neupane.</label><br></br><br></br>
+
 
                     <p>I am a programmer with interest in</p>
                     <p className='strings'><Typewriter
@@ -72,6 +73,8 @@ function AllPages() {
 
             {/* About */}
             <section id='about'>
+                <Fade top cascade>
+
                 <div className='about-info'>
                     <label>About Me</label><br></br><br></br>
                     <p>Hello there! My name is Arpan Neupane and I am a 13 year old programmer.
@@ -86,6 +89,9 @@ function AllPages() {
                         clicking the mail icon on the sidebar.
                     </p>
                 </div>
+                </Fade>
+
+                <Fade top cascade>
 
                 <div className='skills-info'>
                     <label className='skills-header'>Skills</label><br></br><br></br>
@@ -126,6 +132,8 @@ function AllPages() {
 
                     </div>
                 </div>
+                </Fade>
+
 
             </section>
 
@@ -157,19 +165,28 @@ function AllPages() {
                         <label>This Website</label>
                         <img src={site} alt='website'/>
                         <div className='tech-used'>
-                            <label className='tool'>React</label>
-                            <label className='tool'>React Router</label>
+                            <label className='tool'>React.js</label>
+                            <label className='tool'>React Hooks</label>
                         </div>
                     </div>
                     <div className='app' onClick={() => setShowYT(true)}>
                         <label>YouTube Frontend Clone</label>
                         <img src={ytclone} alt='website'/>
                         <div className='tech-used'>
-                            <label className='tool'>React</label>
+                            <label className='tool'>React.js</label>
                             <label className='tool'>React Router</label>
                             <label className='tool'>Firebase</label>
                         </div>
-                    </div>           
+                    </div>       
+                    <div className='app' onClick={() => setShowGames(true)}>
+                        <label>Games</label>
+                        <img src={games} alt='website'/>
+                        <div className='tech-used'>
+                            <label className='tool'>Python</label>
+                            <label className='tool'>Pygame</label>
+                            <label className='tool'>Turtle Graphics</label>
+                        </div>
+                    </div>    
                     <div className='app' onClick={() => setShowAirQM(true)}>
                         <label>Air Quality Monitor</label>
                         <img src={airqm} alt='website'/>
@@ -221,12 +238,10 @@ function AllPages() {
                 showYT={showYT}
                 closeYT={closeYT}
             />
-
-
-            {/* Contact */}
-            <section id='contact'>
-
-            </section>
+            <GamesModal
+                showGames={showGames}
+                closeGames={closeGames}
+            />
         </div>
     )
 }
