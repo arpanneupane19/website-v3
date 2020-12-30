@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import './Navbar.css'
+import '../components/Navbar.css'
 import {FaGripLines} from 'react-icons/fa';
 import {AiOutlineClose} from 'react-icons/ai';
 import Menu from './Menu'
