@@ -46,6 +46,7 @@ a {
     .modal-container {
         width: initial;
         left: 0%;
+        top: 25%;
     }
 }
 
@@ -53,5 +54,6 @@ a {
     .modal-container {
         width: initial;
         left: 0%;
+        top: 20%;
     }
 }

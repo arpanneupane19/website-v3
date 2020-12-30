@@ -2,8 +2,10 @@
     height: 1390px;
     display: flex;
     flex-direction: column;
-    background-color: #1a1a1a;
+    background: #1a1a1a;
     color: white;
+    overflow: hidden;
+    max-width: 100%;
 }
 
 .backdrop {
@@ -21,7 +23,10 @@
     margin-top: 150px;
     padding-left: 130px;
     padding-right: 100px;
-    font-size: larger;
+}
+
+.intro > label {
+    font-size: xx-large;
 }
 
 .name {
@@ -36,7 +41,6 @@
 .button > a {
     background: rgb(0, 140, 255);
     padding: 10px;
-    margin-left: 130px;
     color: white;
     text-decoration: none;
     border-radius: 3px;
@@ -154,8 +158,6 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    overflow-y: auto;
-    height: 400px;
 }
 
 .projects > .app {
@@ -204,9 +206,6 @@
         padding-right: 100px;
     }
 
-    .button > a {
-        margin-left: 100px;
-    }
     #about {
         flex-direction: column;
     }
@@ -233,9 +232,6 @@
         padding-right: 100px;
     }
 
-    .button > a {
-        margin-left: 100px;
-    }
     #about {
         flex-direction: column;
     }
@@ -263,12 +259,8 @@
         padding-right: 0px;
     }
 
-    .button {
-        text-align: center;
-    }
 
     .button > a {
-        margin-left: 0px;
         text-align: center;
     }
     #about {
@@ -287,5 +279,7 @@
         margin-left: 50px;
     }
 
-    
+    .projects > .app {
+        padding: 23px;
+    }
 }

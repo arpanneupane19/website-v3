@@ -61,11 +61,12 @@ function AllPages() {
 												loop: true,
 										}}
                     /></p>
+
+                    <div className='button'>
+                        <a href='#about'>Learn More.</a>
+                    </div>
                 </div>
 
-                <div className='button'>
-                    <a href='#about'>Learn More.</a>
-                </div>
 
             </section>
 

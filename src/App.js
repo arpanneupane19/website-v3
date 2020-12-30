@@ -1,7 +1,6 @@
 import './App.css';
 import AllPages from './components/AllPages'
 
-
 function App() {
   return (
     <div className="App">
