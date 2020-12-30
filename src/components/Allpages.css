@@ -126,13 +126,13 @@
 }
 
 .parallax {
-    background: url('./img/computer.jpg');
-    height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: brightness(40%);
+    background: url('./img/computer.jpg') !important;
+    height: 500px !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    filter: brightness(40%) !important;
 }
 
 #projects {
