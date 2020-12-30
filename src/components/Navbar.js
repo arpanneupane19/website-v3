@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import '../components/Navbar.css'
 import {FaGripLines} from 'react-icons/fa';
 import {AiOutlineClose} from 'react-icons/ai';
+import Rotate from 'react-reveal/Rotate';
 import Menu from './Menu'
 
 function Navbar() {
@@ -19,12 +20,14 @@ function Navbar() {
             >
                 <div className='navigation-links'>
                     <nav>
-                        <label className='logo'>Arpan Neupane</label>
+                        <Rotate>
+                            <label className='logo'>Arpan Neupane</label>
+                        </Rotate>
                         <ul>
                         <li><a href='#home'>Home</a></li>
                         <li><a href='#about'>About</a></li>
                         <li><a href='#projects'>Projects</a></li>
-                        <li><a href='#home'>Contact</a></li>
+                        <li><a href='#contact'>Contact</a></li>
                         </ul>
                         <li onClick={() => showMenu ? setShowMenu(false): setShowMenu(true)}className='bars'>{showMenu ? <AiOutlineClose/>: <FaGripLines/>}</li>
                     </nav>  
