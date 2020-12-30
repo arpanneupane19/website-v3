@@ -91,17 +91,39 @@ function AllPages() {
                     <label className='skills-header'>Skills</label><br></br><br></br>
                     <label className='lang-and-fw'>Languages</label>
                     <div className='languages'>
-                        <label className='proficient'>Python</label>
-                        <label className='proficient'>JavaScript</label>
-                        <label className='proficient'>HTML/CSS</label>
+                        <div className='proficient-row'>
+                            <label className='proficient'>Python</label>
+                            <label className='proficient'>HTML/CSS</label>
+                        </div>
+                        <div className='intermediate-row'>
+                            <label className='intermediate'>JavaScript</label>
+                            <label className='intermediate'>SQL</label>
+                        </div>
+
+                        <div className='beginner-row'>
+                            <label className='beginner'>Dart</label>
+                        </div>
                     </div><br></br>
 
                     <label className='lang-and-fw'>Frameworks/Libraries</label>
                     <div className='frameworks'>
-                        <label className='proficient'>Flask</label>
-                        <label className='proficient'>Pygame</label>
-                        <label className='intermediate'>Bootstrap</label>
-                        <label className='intermediate'>React</label>
+
+                        <div className='proficient-row'>
+                            <label className='proficient'>Flask</label>
+                            <label className='proficient'>Pygame</label>
+                        </div>
+                        
+                        <div className='intermediate-row'>
+                            <label className='intermediate'>Bootstrap</label>
+                            <label className='intermediate'>React</label>
+                            <label className='intermediate'>Tkinter</label>
+                        </div>
+
+                        <div className='beginner-row'>
+                            <label className='beginner'>Flutter</label>
+                            <label className='beginner'>Turtle Graphics</label>
+                        </div>
+
                     </div>
                 </div>
 
@@ -165,9 +187,12 @@ function AllPages() {
                             <label className='tool'>HTML</label>
                             <label className='tool'>CSS</label>
                         </div>
-                    </div>    
+                    </div>
+
                 </div>
+                <p className='ending-msg'>This took time to make 🤣.</p>
             </section>
+
             <BloggyModal
                 showBloggy={showBloggy}
                 closeBloggy={closeBloggy}
