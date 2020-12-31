@@ -166,7 +166,7 @@ function AllPages() {
                         <img src={site} alt='website'/>
                         <div className='tech-used'>
                             <label className='tool'>React.js</label>
-                            <label className='tool'>React Hooks</label>
+                            <label className='tool'>Router</label>
                         </div>
                     </div>
                     <div className='app' onClick={() => setShowYT(true)}>
