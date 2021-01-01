@@ -106,6 +106,25 @@ li > a:hover {
         display: initial;
     }
 
+}
 
+@media (min-width: 51px) and (max-width: 319px) {
+
+    .logo {
+        margin-left: 50px;
+    }
+    ul {
+        display: none;
+    }
+
+    .bars {
+        display: initial;
+        margin-right: 70px;
+        margin-top: 33px;
+    }
+
+    .menu {
+        display: initial;
+    }
 
 }
