@@ -5,3 +5,28 @@
 .contact-header-info {
     text-align: center;
 }
+
+.contact-links {
+    text-align: center;
+}
+
+.box {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.box a {
+    font-size: 1.5em;
+    color: black;
+    border: 1px solid gray;
+    padding: 6px;
+    border-radius: 6px;
+    background: white;
+}
+
+.box a:hover {
+    background: rgb(0, 140, 255);
+    color: white;
+    transition: .3s ease;
+}
+
