@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Typewriter from 'typewriter-effect';
 import '../components/Allpages.css';
 import {BloggyModal, TodosModal, WebsiteModal, GamesModal, PWGenModal, AirQMModal, YTModal} from './Modal';
@@ -13,6 +13,16 @@ import games from './img/games.png';
 
 function AllPages() {
     const strings = ['web apps.', 'GUIs.', 'React.', 'Python.', 'Flask.']
+
+    const [igData, setIgData] = useState([{}]);
+    
+    useEffect(()=> {
+        fetch('https://graph.instagram.com/<INSTAGRAM USER ID>?fields=username&access_token=<INSTAGRAM ACCESS TOKEN>').then(
+            response => response.json()
+        ).then(data => setIgData(data))
+    }, []);
+
+    const igURL = `https://instagram.com/${igData.username}`;
 
     // Bloggy hooks
     const [showBloggy, setShowBloggy] = useState(false);
@@ -141,7 +151,7 @@ function AllPages() {
         
             {/* Projects */}
             <section id='projects'>
-                <label className='projects-header'>Projects</label><br></br><br></br>
+                <label className='projects-header'>Projects</label>
                 <div className='projects'>
                     <div className='app' onClick={() => setShowBloggy(true)}>
                         <label>Bloggy</label>
@@ -166,7 +176,7 @@ function AllPages() {
                         <img src={site} alt='website'/>
                         <div className='tech-used'>
                             <label className='tool'>React.js</label>
-                            <label className='tool'>Router</label>
+                            <label className='tool'>Instagram API</label>
                         </div>
                     </div>
                     <div className='app' onClick={() => setShowYT(true)}>
@@ -174,7 +184,7 @@ function AllPages() {
                         <img src={ytclone} alt='website'/>
                         <div className='tech-used'>
                             <label className='tool'>React.js</label>
-                            <label className='tool'>React Router</label>
+                            <label className='tool'>Router</label>
                             <label className='tool'>Firebase</label>
                         </div>
                     </div>       
@@ -208,6 +218,7 @@ function AllPages() {
 
                 </div>
                 <p className='ending-msg'>This took time to make 🤣.</p>
+                <p className='ending-msg'>Created with passion by <a href={igURL} target='__blank'>{igData.username}</a>.</p>
             </section>
 
             <BloggyModal

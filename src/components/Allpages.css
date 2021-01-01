@@ -61,7 +61,7 @@
 #about {
     height: 1300px;
     display: flex;
-
+    background-color: white;
 }
 
 .about-info {
@@ -237,6 +237,11 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+
+    .parallax {
+        display: none;
+    }
+
     .intro {
         padding-left: 100px;
         padding-right: 100px;
@@ -263,6 +268,10 @@
 
 @media (min-width: 481px) and (max-width: 767px) {
 
+    .parallax {
+        display: none;
+    }
+
     .intro {
         padding-left: 100px;
         padding-right: 100px;
@@ -288,6 +297,10 @@
 
 
 @media (min-width: 320px) and (max-width: 480px) {
+
+    .parallax {
+        display: none;
+    }
 
     .intro {
         text-align: center;
@@ -317,5 +330,41 @@
 
     .projects > .app {
         padding: 23px;
+    }
+}
+
+@media (min-width: 51px) and (max-width: 319px) {
+    .parallax {
+        display: none;
+    }
+
+    .intro {
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+
+    .button > a {
+        text-align: center;
+    }
+    #about {
+        flex-direction: column;
+    }
+
+    .skills-info {
+        width: 81%;
+        margin-top: 50px;
+        margin-right: 80px;
+        margin-left: 50px;
+    }
+
+    .about-info {
+        width: 70%;
+        margin-left: 50px;
+    }
+
+    .projects > .app {
+        padding: 0px;
     }
 }
