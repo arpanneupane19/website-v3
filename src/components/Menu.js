@@ -12,9 +12,9 @@ function Menu({showMenu}) {
                 }}
                 >
                     
-                <a href='#home'>Home</a>
-                <a href='#about'>About</a>
-                <a href='#portfolio'>Portfolio</a>
+                <a href='/#home'>Home</a>
+                <a href='/#about'>About</a>
+                <a href='/#portfolio'>Portfolio</a>
                 <Link to='/contact'>Contact</Link>
                
             </div>
