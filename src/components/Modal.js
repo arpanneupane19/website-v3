@@ -57,7 +57,7 @@ export function TodosModal ({showTodos, closeTodos}) {
 				This app is able to perform CRUD operations.
 				This web application uses Python as the backend and HTML & CSS as the frontend. It is using a <a href="https://www.sqlite.org/index.html" target="__blank">SQLite</a> database.<br></br><br></br>
 				The GitHub repository is <a href="https://github.com/arpanneupane19/bloggy-webapp." target="__blank">here!</a>
-				The live demo is <a href="https://todosapp.pythonanywhere.com" target="__blank">here!</a>
+				The live demo is <a href="https://todos-app-v2.herokuapp.com" target="__blank">here!</a>
 
 				</p>
 			</div>
