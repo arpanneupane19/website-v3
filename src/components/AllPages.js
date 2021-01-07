@@ -1,3 +1,6 @@
+// Code written by Arpan Neupane
+// Copyright © Arpan Neupane 2021.
+
 import React, {useState, useEffect} from 'react'
 import Typewriter from 'typewriter-effect';
 import '../components/Allpages.css';
@@ -17,7 +20,7 @@ function AllPages() {
     const [igData, setIgData] = useState([{}]);
     
     useEffect(()=> {
-        fetch('https://graph.instagram.com/<INSTAGRAM USER ID>?fields=username&access_token=<INSTAGRAM ACCESS TOKEN>').then(
+        fetch('https://graph.instagram.com/<USER ID>?fields=username&access_token=<TOKEN>').then(
             response => response.json()
         ).then(data => setIgData(data))
     }, []);
@@ -96,7 +99,7 @@ function AllPages() {
                     <p> 
                         If you have any questions or comments regarding my apps, please feel
                         free to contact me at <a href="mailto:arpanneupane19@gmail.com" target='__blank'>arpanneupane19@gmail.com</a> or by 
-                        clicking the mail icon on the sidebar.
+                        going to the contact page.
                     </p>
                 </div>
                 </Fade>
