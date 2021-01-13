@@ -14,7 +14,7 @@ function Menu({showMenu}) {
                     
                 <a href='/#home'>Home</a>
                 <a href='/#about'>About</a>
-                <a href='/#projects'>Portfolio</a>
+                <a href='/#projects'>Projects</a>
                 <Link to='/contact'>Contact</Link>
                
             </div>
