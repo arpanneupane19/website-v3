@@ -67,6 +67,36 @@ export function TodosModal ({showTodos, closeTodos}) {
 }
 
 
+export function WeatherModal({showWeather, closeWeather}) {
+	return (
+	<div className='modal-container'
+			style={{
+				visibility: showWeather ? 'visible' : 'hidden',
+				opacity: showWeather ? 1: 0
+				
+			}}
+		>
+			<div className='modal-header'>
+				<h4>Weather Wizard</h4>
+				<span onClick={closeWeather} className='close-modal-btn'>x</span>
+			</div>
+			<br></br>
+			<div className='modal-content'>
+				<p>
+					This is a weather app called Weather Wizard! I built it using <a href="https://reactjs.org" target="__blank">React</a>.
+					I used the <a href="https://openweathermap.org/" target="__blank">OpenWeatherMap</a> API to retrieve weather data.
+					You can enter in any city, and it will give you instant weather details for that city! You can click the temperature to toggle between Fahrenheit & Celsius.
+					The background also changes depending on the temperature!
+					<br></br><br></br>
+					Check it out <a href="https://weatherwiz.herokuapp.com" target="__blank">here</a>!
+				</p>
+			</div>
+
+		</div>
+
+	)
+}
+
 export function WebsiteModal ({showSite, closeSite}) {
 	return (
 
@@ -183,6 +213,7 @@ export function YTModal ({showYT, closeYT}) {
 				<p>
 					This is a frontend YouTube clone created using <a href="https://reactjs.org" target="__blank">React</a>. I deployed this on <a href="https://firebase.google.com/" target="__blank">Firebase</a>.
 					It looks similar to what you'd see on the YouTube home page.
+					Check it out <a href="https://clone-46a97.firebaseapp.com" target="__blank">here</a>!
 				</p>
 			</div>
 
