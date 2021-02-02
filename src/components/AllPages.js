@@ -4,7 +4,7 @@
 import React, {useState, useEffect} from 'react'
 import Typewriter from 'typewriter-effect';
 import '../components/Allpages.css';
-import {BloggyModal, TodosModal, WebsiteModal, GamesModal, PWGenModal, AirQMModal, YTModal} from './Modal';
+import {BloggyModal, TodosModal, WeatherModal, WebsiteModal, GamesModal, PWGenModal, AirQMModal, YTModal} from './Modal';
 import Fade from 'react-reveal/Fade';
 import bloggy from './img/bloggy.png';
 import todos from './img/todos.png';
@@ -13,6 +13,7 @@ import ytclone from './img/ytclone.png'
 import site from './img/site.png';
 import pwgen from './img/pwgen.png';
 import games from './img/games.png';
+import weatherwiz from './img/weatherwiz.png';
 
 function AllPages() {
     const strings = ['web apps.', 'GUIs.', 'React.', 'Python.', 'Flask.']
@@ -20,7 +21,7 @@ function AllPages() {
     const [igData, setIgData] = useState([{}]);
     
     useEffect(()=> {
-        fetch('https://graph.instagram.com/<USER ID>?fields=username&access_token=<TOKEN>').then(
+        fetch('https://graph.instagram.com/<USER_ID>?fields=username&access_token=<ACCESS_TOKEN>').then(
             response => response.json()
         ).then(data => setIgData(data))
     }, []);
@@ -34,6 +35,10 @@ function AllPages() {
     // Todos hooks
     const [showTodos, setShowTodos] = useState(false);
     const closeTodos = () => setShowTodos(false);
+
+    // Weather Wizard hooks
+    const [showWeather, setShowWeather] = useState(false);
+    const closeWeather = () => setShowWeather(false);
 
     // Site hooks
     const [showSite, setShowSite] = useState(false);
@@ -58,7 +63,7 @@ function AllPages() {
 
     return (
         <div>
-            {showBloggy || showTodos || showSite || showGames || showPWGen || showAirQM || showYT ? <div onClick={() => setShowBloggy(false) || setShowTodos(false) || setShowSite(false) || setShowGames(false) || setShowPWGen(false) || setShowAirQM(false) || setShowYT(false)} className='backdrop'></div>: null}
+            {showBloggy || showTodos || showWeather || showSite || showGames || showPWGen || showAirQM || showYT ? <div onClick={() => setShowBloggy(false) || setShowTodos(false) || setShowWeather(false) || setShowSite(false) || setShowGames(false) || setShowPWGen(false) || setShowAirQM(false) || setShowYT(false)} className='backdrop'></div>: null}
 
             {/* Home */}
             <section id='home'>
@@ -174,6 +179,14 @@ function AllPages() {
                             <label className='tool'>SQLite</label>
                         </div>
                     </div>
+                    <div className='app' onClick={() => setShowWeather(true)}>
+                        <label>Weather Wizard</label>
+                        <img src={weatherwiz} alt='website'/>
+                        <div className='tech-used'>
+                            <label className='tool'>React.js</label>
+                            <label className='tool'>Weather API</label>
+                        </div>
+                    </div>
                     <div className='app' onClick={() => setShowSite(true)}>
                         <label>This Website</label>
                         <img src={site} alt='website'/>
@@ -231,6 +244,10 @@ function AllPages() {
             <TodosModal
 				showTodos={showTodos}
                 closeTodos={closeTodos}
+            />
+            <WeatherModal
+                showWeather={showWeather}
+                closeWeather={closeWeather}
             />
             <WebsiteModal
                 showSite={showSite}
