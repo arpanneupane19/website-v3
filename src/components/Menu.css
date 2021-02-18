@@ -1,28 +1,28 @@
 .menu-links {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 1024px) {
-    .menu-links {
-        float: right;
-        width: 100%;
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        transition: .3s;
-        margin-bottom: 20px;
-    }
-    
-    .menu-links > a {
-        margin: 10px;
-        text-decoration: none;
-        color: white;
-        font-size: 14px;
-    }
-    
-    .menu-links > a:hover {
-        color: rgb(0, 140, 255);
-        transition: .2s;
-    }
+  .menu-links {
+    float: right;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.3s;
+    margin-bottom: 20px;
+  }
+
+  .menu-links > a {
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+  }
+
+  .menu-links > a:hover {
+    color: rgb(0, 140, 255);
+    transition: 0.2s;
+  }
 }
