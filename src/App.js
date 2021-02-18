@@ -2,7 +2,7 @@ import './App.css';
 import AllPages from './components/AllPages'
 import Navbar from './components/Navbar';
 import Contact from './components/Contact'
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
@@ -15,16 +15,16 @@ function App() {
               about='/#about'
               projects='/#projects'
             />
-            <AllPages/>
+            <AllPages />
           </Route>
 
           <Route exact path='/contact'>
-            <Navbar 
+            <Navbar
               home='/#home'
               about='/#about'
               projects='/#projects'
             />
-            <Contact/>
+            <Contact />
           </Route>
         </Switch>
       </Router>
