@@ -2,13 +2,13 @@ import React from 'react'
 import '../components/Modal.css'
 
 
-export function BloggyModal ({showBloggy, closeBloggy}) {
+export function BloggyModal({ showBloggy, closeBloggy }) {
 	return (
 
 		<div className='modal-container'
 			style={{
 				visibility: showBloggy ? 'visible' : 'hidden',
-				opacity: showBloggy ? 1: 0
+				opacity: showBloggy ? 1 : 0
 
 
 			}}
@@ -20,7 +20,7 @@ export function BloggyModal ({showBloggy, closeBloggy}) {
 			<br></br>
 			<div className='modal-content'>
 				<p>
-				This is a social networking app created using the <a href="https://flask.palletsprojects.com/en/1.1.x/" target="__blank">Flask</a> web framework in <a href="https://python.org" target="__blank">Python</a>.
+					This is a social networking app created using the <a href="https://flask.palletsprojects.com/en/1.1.x/" target="__blank">Flask</a> web framework in <a href="https://python.org" target="__blank">Python</a>.
 				Users can create blog posts, like blog posts, comment on them, and follow other users. Users have the ability to also update their accounts,
                 set profile pictures, change password, create a bio, and many more!<br></br>
 				This web application uses Python as the backend and HTML, CSS, and Bootstrap as the frontend. It is using a <a href="https://www.sqlite.org/index.html" target="__blank">SQLite</a> database. <br></br><br></br>
@@ -36,13 +36,13 @@ export function BloggyModal ({showBloggy, closeBloggy}) {
 
 
 
-export function TodosModal ({showTodos, closeTodos}) {
+export function TodosModal({ showTodos, closeTodos }) {
 	return (
 		<div className='modal-container'
 			style={{
 				visibility: showTodos ? 'visible' : 'hidden',
-				opacity: showTodos ? 1: 0
-				
+				opacity: showTodos ? 1 : 0
+
 			}}
 		>
 			<div className='modal-header'>
@@ -52,7 +52,7 @@ export function TodosModal ({showTodos, closeTodos}) {
 			<br></br>
 			<div className='modal-content'>
 				<p>
-				This is a Todo-List-App created using the <a href="https://flask.palletsprojects.com/en/1.1.x/" target="__blank">Flask</a> web framework in <a href="https://python.org" target="__blank">Python</a>.
+					This is a Todo-List-App created using the <a href="https://flask.palletsprojects.com/en/1.1.x/" target="__blank">Flask</a> web framework in <a href="https://python.org" target="__blank">Python</a>.
 				Users can sign up, create todos, and mark them complete once they have been finished. They can edit todos if they'd want to change the task.
 				This app is able to perform CRUD operations.
 				This web application uses Python as the backend and HTML & CSS as the frontend. It is using a <a href="https://www.sqlite.org/index.html" target="__blank">SQLite</a> database.<br></br><br></br>
@@ -67,13 +67,13 @@ export function TodosModal ({showTodos, closeTodos}) {
 }
 
 
-export function WeatherModal({showWeather, closeWeather}) {
+export function WeatherModal({ showWeather, closeWeather }) {
 	return (
-	<div className='modal-container'
+		<div className='modal-container'
 			style={{
 				visibility: showWeather ? 'visible' : 'hidden',
-				opacity: showWeather ? 1: 0
-				
+				opacity: showWeather ? 1 : 0
+
 			}}
 		>
 			<div className='modal-header'>
@@ -97,16 +97,14 @@ export function WeatherModal({showWeather, closeWeather}) {
 	)
 }
 
-export function WebsiteModal ({showSite, closeSite}) {
+export function WebsiteModal({ showSite, closeSite }) {
 	return (
-
-
 
 		<div className='modal-container'
 			style={{
 				visibility: showSite ? 'visible' : 'hidden',
-				opacity: showSite ? 1: 0
-				
+				opacity: showSite ? 1 : 0
+
 			}}
 		>
 			<div className='modal-header'>
@@ -121,9 +119,9 @@ export function WebsiteModal ({showSite, closeSite}) {
 					if I change my username on Instagram. The URL also changes too.
 					You can view the code <a href="https://github.com/arpanneupane19/personal-websitev3" target="__blank">here!</a><br>
 					</br><br></br>
-                    <a href="https://github.com/arpanneupane19/arpanneupane19.github.io" target="__blank">First version</a> and <a href="https://github.com/arpanneupane19/personal-websitev2" target='__blank'>second version</a>.
+					<a href="https://github.com/arpanneupane19/arpanneupane19.github.io" target="__blank">First version</a> and <a href="https://github.com/arpanneupane19/personal-websitev2" target='__blank'>second version</a>.
 
-					
+
 
 
 				</p>
@@ -135,13 +133,13 @@ export function WebsiteModal ({showSite, closeSite}) {
 
 }
 
-export function GamesModal ({showGames, closeGames}) {
+export function GamesModal({ showGames, closeGames }) {
 	return (
 		<div className='modal-container'
 			style={{
 				visibility: showGames ? 'visible' : 'hidden',
-				opacity: showGames ? 1: 0
-				
+				opacity: showGames ? 1 : 0
+
 			}}
 		>
 			<div className='modal-header'>
@@ -165,13 +163,13 @@ export function GamesModal ({showGames, closeGames}) {
 	)
 }
 
-export function PWGenModal ({showPWGen, closePWGen}) {
+export function PWGenModal({ showPWGen, closePWGen }) {
 	return (
 		<div className='modal-container'
 			style={{
 				visibility: showPWGen ? 'visible' : 'hidden',
-				opacity: showPWGen ? 1: 0
-				
+				opacity: showPWGen ? 1 : 0
+
 			}}
 		>
 			<div className='modal-header'>
@@ -181,7 +179,7 @@ export function PWGenModal ({showPWGen, closePWGen}) {
 			<br></br>
 			<div className='modal-content'>
 				<p>
-					
+
 					This is a Password Generator created using <a href="https://www.javascript.com/" target="__blank">JavaScript</a>.
 					You can click a button and it will randomly generate a secure password and you can click the copy button to copy the password.
 					The GitHub repository is <a href="https://github.com/arpanneupane19/passwordgenerator" target="__blank">here!</a><br></br>
@@ -195,13 +193,13 @@ export function PWGenModal ({showPWGen, closePWGen}) {
 	)
 }
 
-export function YTModal ({showYT, closeYT}) {
+export function YTModal({ showYT, closeYT }) {
 	return (
 		<div className='modal-container'
 			style={{
 				visibility: showYT ? 'visible' : 'hidden',
-				opacity: showYT ? 1: 0
-				
+				opacity: showYT ? 1 : 0
+
 			}}
 		>
 			<div className='modal-header'>
@@ -224,13 +222,13 @@ export function YTModal ({showYT, closeYT}) {
 
 
 
-export function AirQMModal ({showAirQM, closeAirQM}) {
+export function AirQMModal({ showAirQM, closeAirQM }) {
 	return (
 		<div className='modal-container'
 			style={{
 				visibility: showAirQM ? 'visible' : 'hidden',
-				opacity: showAirQM ? 1: 0
-				
+				opacity: showAirQM ? 1 : 0
+
 			}}
 		>
 			<div className='modal-header'>

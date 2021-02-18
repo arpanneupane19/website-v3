@@ -1,72 +1,72 @@
 a {
-    text-decoration: none;
-    color:  rgb(0, 140, 255);
+  text-decoration: none;
+  color: rgb(0, 140, 255);
 }
 
 .modal-container {
-    width: 33%;
-    padding: 15px;
-    border: 1px solid lightgray;
-    box-shadow: -2px 0px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    z-index: 500;
-    top: 35%;
-    left: 32%;
-    background-color: white;
-    position: fixed;
-    margin: 10px;
-    transition: .1s ease-in;
+  width: 33%;
+  padding: 15px;
+  border: 1px solid lightgray;
+  box-shadow: -2px 0px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  z-index: 500;
+  top: 35%;
+  left: 32%;
+  background-color: white;
+  position: fixed;
+  margin: 10px;
+  transition: 0.1s ease-in;
 }
 
 .modal-header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .modal-header > h4 {
-    font-size: larger;
-    font-weight: bolder;
+  font-size: larger;
+  font-weight: bolder;
 }
 
 .modal-header > span {
-    font-size: larger;
-    font-weight: bolder;
+  font-size: larger;
+  font-weight: bolder;
 }
 
 .modal-content {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .close-modal-btn {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .modal-container {
-        width: 40%;
-        left: 26%;
-    }
+  .modal-container {
+    width: 40%;
+    left: 26%;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-    .modal-container {
-        width: 50%;
-        left: 20%;
-    }
+  .modal-container {
+    width: 50%;
+    left: 20%;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-    .modal-container {
-        width: initial;
-        left: 0%;
-        top: 25%;
-    }
+  .modal-container {
+    width: initial;
+    left: 0%;
+    top: 25%;
+  }
 }
 
 @media (max-width: 319px) {
-    .modal-container {
-        width: initial;
-        left: 0%;
-        top: 20%;
-    }
+  .modal-container {
+    width: initial;
+    left: 0%;
+    top: 20%;
+  }
 }
