@@ -1,10 +1,10 @@
 // Code written by Arpan Neupane
 // Copyright © Arpan Neupane 2021.
 
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import Typewriter from 'typewriter-effect';
 import '../components/Allpages.css';
-import {BloggyModal, TodosModal, WeatherModal, WebsiteModal, GamesModal, PWGenModal, AirQMModal, YTModal} from './Modal';
+import { BloggyModal, TodosModal, WeatherModal, WebsiteModal, GamesModal, PWGenModal, AirQMModal, YTModal } from './Modal';
 import Fade from 'react-reveal/Fade';
 import bloggy from './img/bloggy.png';
 import todos from './img/todos.png';
@@ -19,8 +19,8 @@ function AllPages() {
     const strings = ['web apps.', 'GUIs.', 'React.', 'Python.', 'Flask.']
 
     const [igData, setIgData] = useState([{}]);
-    
-    useEffect(()=> {
+
+    useEffect(() => {
         fetch('https://graph.instagram.com/<USER_ID>?fields=username&access_token=<ACCESS_TOKEN>').then(
             response => response.json()
         ).then(data => setIgData(data))
@@ -63,7 +63,7 @@ function AllPages() {
 
     return (
         <div>
-            {showBloggy || showTodos || showWeather || showSite || showGames || showPWGen || showAirQM || showYT ? <div onClick={() => setShowBloggy(false) || setShowTodos(false) || setShowWeather(false) || setShowSite(false) || setShowGames(false) || setShowPWGen(false) || setShowAirQM(false) || setShowYT(false)} className='backdrop'></div>: null}
+            {showBloggy || showTodos || showWeather || showSite || showGames || showPWGen || showAirQM || showYT ? <div onClick={() => setShowBloggy(false) || setShowTodos(false) || setShowWeather(false) || setShowSite(false) || setShowGames(false) || setShowPWGen(false) || setShowAirQM(false) || setShowYT(false)} className='backdrop'></div> : null}
 
             {/* Home */}
             <section id='home'>
@@ -74,11 +74,11 @@ function AllPages() {
 
                     <p>I am a programmer with interest in</p>
                     <p className='strings'><Typewriter
-                                            options={{
-												strings: strings,
-												autoStart: true,
-												loop: true,
-										}}
+                        options={{
+                            strings: strings,
+                            autoStart: true,
+                            loop: true,
+                        }}
                     /></p>
 
                     <div className='button'>
@@ -93,77 +93,74 @@ function AllPages() {
             <section id='about'>
                 <Fade top cascade>
 
-                <div className='about-info'>
-                    <label>About Me</label><br></br><br></br>
-                    <p>Hello there! My name is Arpan Neupane and I am a 13 year old programmer.
-                        My interests are in web development, and I mainly use Python as my backend.
-                        I also have created games using Python's Pygame library and GUI applications with Tkinter.
-                        I enjoy creating apps that can help people, make every day life easier, and make it fun.
-                        I'm always looking forward to improve my applications.
-                    </p><br></br>
-                    <p> 
-                        If you have any questions or comments regarding my apps, please feel
-                        free to contact me at <a href="mailto:arpanneupane19@gmail.com" target='__blank'>arpanneupane19@gmail.com</a> or by 
+                    <div className='about-info'>
+                        <h2 className='about-header'>About Me</h2><br></br>
+                        <p>Hello there! My name is Arpan Neupane and I am a 13 year old programmer. I like creating apps and sites that can help people, make life easier, and make it fun. I'm always looking forward to
+                        improving my apps. I also make YouTube videos surrounding technology and programming. I make tutorials, best practices, and also give advice on how to use tools better.
+                        </p><br></br>
+                        <p>
+                            If you have any questions or comments regarding my apps, please feel
+                        free to contact me at <a href="mailto:arpanneupane19@gmail.com" target='__blank'>arpanneupane19@gmail.com</a> or by
                         going to the contact page.
                     </p>
-                </div>
+                    </div>
                 </Fade>
 
                 <Fade top cascade>
 
-                <div className='skills-info'>
-                    <label className='skills-header'>Skills</label><br></br><br></br>
-                    <label className='lang-and-fw'>Languages</label>
-                    <div className='languages'>
-                        <div className='proficient-row'>
-                            <label className='proficient'>Python</label>
-                            <label className='proficient'>HTML/CSS</label>
-                        </div>
-                        <div className='intermediate-row'>
-                            <label className='intermediate'>JavaScript</label>
-                            <label className='intermediate'>SQL</label>
-                        </div>
+                    <div className='skills-info'>
+                        <h2 className='skills-header'>Skills</h2><br></br>
+                        <p className='lang-and-fw'>Languages</p>
+                        <div className='languages'>
+                            <div className='proficient-row'>
+                                <p className='proficient'>Python</p>
+                                <p className='proficient'>HTML/CSS</p>
+                            </div>
+                            <div className='intermediate-row'>
+                                <p className='intermediate'>JavaScript</p>
+                                <p className='intermediate'>SQL</p>
+                            </div>
 
-                        <div className='beginner-row'>
-                            <label className='beginner'>Dart</label>
-                        </div>
-                    </div><br></br>
+                            <div className='beginner-row'>
+                                <p className='beginner'>Dart</p>
+                            </div>
+                        </div><br></br>
 
-                    <label className='lang-and-fw'>Frameworks/Libraries</label>
-                    <div className='frameworks'>
+                        <p className='lang-and-fw'>Frameworks/Libraries</p>
+                        <div className='frameworks'>
 
-                        <div className='proficient-row'>
-                            <label className='proficient'>Flask</label>
-                            <label className='proficient'>Pygame</label>
-                        </div>
-                        
-                        <div className='intermediate-row'>
-                            <label className='intermediate'>Bootstrap</label>
-                            <label className='intermediate'>React</label>
-                            <label className='intermediate'>Tkinter</label>
-                        </div>
+                            <div className='proficient-row'>
+                                <p className='proficient'>Flask</p>
+                                <p className='proficient'>Pygame</p>
+                            </div>
 
-                        <div className='beginner-row'>
-                            <label className='beginner'>Flutter</label>
-                            <label className='beginner'>Turtle Graphics</label>
-                        </div>
+                            <div className='intermediate-row'>
+                                <p className='intermediate'>React</p>
+                                <p className='intermediate'>Bootstrap</p>
+                                <p className='intermediate'>React Native</p>
+                            </div>
 
+                            <div className='beginner-row'>
+                                <p className='beginner'>Tkinter</p>
+                                <p className='beginner'>Flutter</p>
+                            </div>
+
+                        </div>
                     </div>
-                </div>
                 </Fade>
 
 
             </section>
 
             <div className='parallax'></div>
-        
+
             {/* Projects */}
             <section id='projects'>
                 <label className='projects-header'>Projects</label>
                 <div className='projects'>
                     <div className='app' onClick={() => setShowBloggy(true)}>
                         <label>Bloggy</label>
-                        <img src={bloggy} alt='website'/>
+                        <img src={bloggy} alt='website' />
                         <div className='tech-used'>
                             <label className='tool'>Python</label>
                             <label className='tool'>Flask</label>
@@ -172,7 +169,7 @@ function AllPages() {
                     </div>
                     <div className='app' onClick={() => setShowTodos(true)}>
                         <label>Todos</label>
-                        <img src={todos} alt='website'/>
+                        <img src={todos} alt='website' />
                         <div className='tech-used'>
                             <label className='tool'>Python</label>
                             <label className='tool'>Flask</label>
@@ -181,7 +178,7 @@ function AllPages() {
                     </div>
                     <div className='app' onClick={() => setShowWeather(true)}>
                         <label>Weather Wizard</label>
-                        <img src={weatherwiz} alt='website'/>
+                        <img src={weatherwiz} alt='website' />
                         <div className='tech-used'>
                             <label className='tool'>React.js</label>
                             <label className='tool'>Weather API</label>
@@ -189,7 +186,7 @@ function AllPages() {
                     </div>
                     <div className='app' onClick={() => setShowSite(true)}>
                         <label>This Website</label>
-                        <img src={site} alt='website'/>
+                        <img src={site} alt='website' />
                         <div className='tech-used'>
                             <label className='tool'>React.js</label>
                             <label className='tool'>Instagram API</label>
@@ -197,34 +194,34 @@ function AllPages() {
                     </div>
                     <div className='app' onClick={() => setShowYT(true)}>
                         <label>YouTube Frontend Clone</label>
-                        <img src={ytclone} alt='website'/>
+                        <img src={ytclone} alt='website' />
                         <div className='tech-used'>
                             <label className='tool'>React.js</label>
                             <label className='tool'>Router</label>
                             <label className='tool'>Firebase</label>
                         </div>
-                    </div>       
+                    </div>
                     <div className='app' onClick={() => setShowGames(true)}>
                         <label>Games</label>
-                        <img src={games} alt='website'/>
+                        <img src={games} alt='website' />
                         <div className='tech-used'>
                             <label className='tool'>Python</label>
                             <label className='tool'>Pygame</label>
                             <label className='tool'>Turtle Graphics</label>
                         </div>
-                    </div>    
+                    </div>
                     <div className='app' onClick={() => setShowAirQM(true)}>
                         <label>Air Quality Monitor</label>
-                        <img src={airqm} alt='website'/>
+                        <img src={airqm} alt='website' />
                         <div className='tech-used'>
                             <label className='tool'>Python</label>
                             <label className='tool'>Tkinter</label>
                             <label className='tool'>API</label>
                         </div>
-                    </div>     
+                    </div>
                     <div className='app' onClick={() => setShowPWGen(true)}>
                         <label>Password Generator</label>
-                        <img src={pwgen} alt='website'/>
+                        <img src={pwgen} alt='website' />
                         <div className='tech-used'>
                             <label className='tool'>JavaScript</label>
                             <label className='tool'>HTML</label>
@@ -240,9 +237,9 @@ function AllPages() {
             <BloggyModal
                 showBloggy={showBloggy}
                 closeBloggy={closeBloggy}
-			/>
+            />
             <TodosModal
-				showTodos={showTodos}
+                showTodos={showTodos}
                 closeTodos={closeTodos}
             />
             <WeatherModal
