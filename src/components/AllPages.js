@@ -207,7 +207,7 @@ function AllPages() {
                         <div className='tech-used'>
                             <label className='tool'>Python</label>
                             <label className='tool'>Pygame</label>
-                            <label className='tool'>Turtle Graphics</label>
+                            <label className='tool'>Turtle</label>
                         </div>
                     </div>
                     <div className='app' onClick={() => setShowAirQM(true)}>
