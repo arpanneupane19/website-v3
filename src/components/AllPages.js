@@ -230,8 +230,7 @@ function AllPages() {
                     </div>
 
                 </div>
-                <p className='ending-msg'>This took time to make 🤣.</p>
-                <p className='ending-msg'>Created with passion by <a href={igURL} target='__blank'>{igData.username}</a>.</p>
+                <p className='ending-msg'>Created with ❤️ by <a href={igURL} target='__blank'>{igData.username}</a></p>
             </section>
 
             <BloggyModal
