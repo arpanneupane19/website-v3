@@ -229,7 +229,7 @@ function AllPages() {
                         </div>
                     </div>
 
-                </div>
+                </div><br></br>
                 <p className='ending-msg'>Created with ❤️ by <a href={igURL} target='__blank'>{igData.username}</a></p>
             </section>
 
