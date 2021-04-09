@@ -10,7 +10,7 @@ function Contact() {
     const [igData, setIgData] = useState([{}]);
 
     useEffect(() => {
-        fetch('https://graph.instagram.com/<USER_ID>?fields=username&access_token=<ACCESS_TOKEN>').then(
+        fetch('https://graph.instagram.com/<UserID>?fields=username&access_token=<InstagramAccessToken>').then(
             response => response.json()
         ).then(data => setIgData(data))
     }, []);
