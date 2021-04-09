@@ -34,37 +34,32 @@ export function BloggyModal({ showBloggy, closeBloggy }) {
 }
 
 
-
-
-export function TodosModal({ showTodos, closeTodos }) {
+export function SecuroChatModal({ showSecuroChat, closeSecuroChat }) {
 	return (
 		<div className='modal-container'
 			style={{
-				visibility: showTodos ? 'visible' : 'hidden',
-				opacity: showTodos ? 1 : 0
-
+				visibility: showSecuroChat ? 'visible' : 'hidden',
+				opacity: showSecuroChat ? 1 : 0
 			}}
 		>
 			<div className='modal-header'>
-				<h4>Todos</h4>
-				<span onClick={closeTodos} className='close-modal-btn'>&times;</span>
-			</div>
-			<br></br>
+				<h4>SecuroChat</h4>
+				<span onClick={closeSecuroChat} className='close-modal-btn'>&times;</span>
+			</div><br></br>
 			<div className='modal-content'>
 				<p>
-					This is a Todo-List-App created using the <a href="https://flask.palletsprojects.com/en/1.1.x/" target="__blank">Flask</a> web framework in <a href="https://python.org" target="__blank">Python</a>.
-				Users can sign up, create todos, and mark them complete once they have been finished. They can edit todos if they'd want to change the task.
-				This app is able to perform CRUD operations.
-				This web application uses Python as the backend and HTML & CSS as the frontend. It is using a <a href="https://www.sqlite.org/index.html" target="__blank">SQLite</a> database.<br></br><br></br>
-				The GitHub repository is <a href="https://github.com/arpanneupane19/bloggy-webapp" target="__blank">here</a>!
-				Check it out <a href="https://todosappv2.pythonanywhere.com" target="__blank">here</a>!
+					This is a private chat app created with <a href="https://reactjs.org" target="__blank">React</a> for the frontend, <a href="https://socket.io" target="__blank">Socket.io</a> for instant communication, <a href="https://expressjs.com" target="__blank">Express</a> for the backend, and deployed on <a href="https://heroku.com">Heroku</a>.
+					Users are able to create chat rooms and invite their friends over to chat with them, this can be a two-person conversation, or you can have a group chat.
+					There are pop-up notifications to notify others in a room when someone connects/disconnects.<br></br><br></br>
 
+					Check it out <a href="https://securochat.herokuapp.com" target="__blank">here</a>! You can view the code <a href="https://github.com/arpanneupane19/SecuroChat" target="__blank">here</a>!
 				</p>
 			</div>
 
 		</div>
 	)
 }
+
 
 
 export function WeatherModal({ showWeather, closeWeather }) {
@@ -94,6 +89,36 @@ export function WeatherModal({ showWeather, closeWeather }) {
 
 		</div>
 
+	)
+}
+
+export function TodosModal({ showTodos, closeTodos }) {
+	return (
+		<div className='modal-container'
+			style={{
+				visibility: showTodos ? 'visible' : 'hidden',
+				opacity: showTodos ? 1 : 0
+
+			}}
+		>
+			<div className='modal-header'>
+				<h4>Todos</h4>
+				<span onClick={closeTodos} className='close-modal-btn'>&times;</span>
+			</div>
+			<br></br>
+			<div className='modal-content'>
+				<p>
+					This is a Todo-List-App created using the <a href="https://flask.palletsprojects.com/en/1.1.x/" target="__blank">Flask</a> web framework in <a href="https://python.org" target="__blank">Python</a>.
+				Users can sign up, create todos, and mark them complete once they have been finished. They can edit todos if they'd want to change the task.
+				This app is able to perform CRUD operations.
+				This web application uses Python as the backend and HTML & CSS as the frontend. It is using a <a href="https://www.sqlite.org/index.html" target="__blank">SQLite</a> database.<br></br><br></br>
+				The GitHub repository is <a href="https://github.com/arpanneupane19/bloggy-webapp" target="__blank">here</a>!
+				Check it out <a href="https://todosappv2.pythonanywhere.com" target="__blank">here</a>!
+
+				</p>
+			</div>
+
+		</div>
 	)
 }
 
