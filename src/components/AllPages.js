@@ -4,7 +4,7 @@
 import React, { useState, useEffect } from 'react'
 import Typewriter from 'typewriter-effect';
 import '../components/Allpages.css';
-import { BloggyModal, TodosModal, WeatherModal, WebsiteModal, GamesModal, PWGenModal, AirQMModal, YTModal } from './Modal';
+import { BloggyModal, SecuroChatModal, WeatherModal, TodosModal, WebsiteModal, GamesModal, PWGenModal, AirQMModal, YTModal } from './Modal';
 import Fade from 'react-reveal/Fade';
 import bloggy from './img/bloggy.png';
 import todos from './img/todos.png';
@@ -14,6 +14,7 @@ import site from './img/site.png';
 import pwgen from './img/pwgen.png';
 import games from './img/games.png';
 import weatherwiz from './img/weatherwiz.png';
+import securochat from './img/securochat.png';
 
 function AllPages() {
     const strings = ['web apps.', 'GUIs.', 'React.', 'Python.', 'Flask.']
@@ -21,7 +22,7 @@ function AllPages() {
     const [igData, setIgData] = useState([{}]);
 
     useEffect(() => {
-        fetch('https://graph.instagram.com/<USER_ID>?fields=username&access_token=<ACCESS_TOKEN>').then(
+        fetch('https://graph.instagram.com/<UserID>?fields=username&access_token=<InstagramAccessToken>').then(
             response => response.json()
         ).then(data => setIgData(data))
     }, []);
@@ -32,13 +33,18 @@ function AllPages() {
     const [showBloggy, setShowBloggy] = useState(false);
     const closeBloggy = () => setShowBloggy(false);
 
-    // Todos hooks
-    const [showTodos, setShowTodos] = useState(false);
-    const closeTodos = () => setShowTodos(false);
+    // SecuroChat hooks
+    const [showSecuroChat, setShowSecuroChat] = useState(false);
+    const closeSecuroChat = () => setShowSecuroChat(false);
 
     // Weather Wizard hooks
     const [showWeather, setShowWeather] = useState(false);
     const closeWeather = () => setShowWeather(false);
+
+    // Todos hooks
+    const [showTodos, setShowTodos] = useState(false);
+    const closeTodos = () => setShowTodos(false);
+
 
     // Site hooks
     const [showSite, setShowSite] = useState(false);
@@ -61,9 +67,10 @@ function AllPages() {
     const closeYT = () => setShowYT(false);
 
 
+
     return (
         <div>
-            {showBloggy || showTodos || showWeather || showSite || showGames || showPWGen || showAirQM || showYT ? <div onClick={() => setShowBloggy(false) || setShowTodos(false) || setShowWeather(false) || setShowSite(false) || setShowGames(false) || setShowPWGen(false) || setShowAirQM(false) || setShowYT(false)} className='backdrop'></div> : null}
+            {showBloggy || showSecuroChat || showWeather || showTodos || showSite || showGames || showPWGen || showAirQM || showYT ? <div onClick={() => setShowBloggy(false) || setShowSecuroChat(false) || setShowWeather(false) || setShowTodos(false) || setShowSite(false) || setShowGames(false) || setShowPWGen(false) || setShowAirQM(false) || setShowYT(false)} className='backdrop'></div> : null}
 
             {/* Home */}
             <section id='home'>
@@ -115,6 +122,7 @@ function AllPages() {
                             <div className='proficient-row'>
                                 <p className='proficient'>Python</p>
                                 <p className='proficient'>HTML/CSS</p>
+                                <p className='proficient'>Bash</p>
                             </div>
                             <div className='intermediate-row'>
                                 <p className='intermediate'>JavaScript</p>
@@ -122,7 +130,7 @@ function AllPages() {
                             </div>
 
                             <div className='beginner-row'>
-                                <p className='beginner'>Dart</p>
+
                             </div>
                         </div><br></br>
 
@@ -136,13 +144,13 @@ function AllPages() {
 
                             <div className='intermediate-row'>
                                 <p className='intermediate'>React</p>
-                                <p className='intermediate'>Bootstrap</p>
                                 <p className='intermediate'>React Native</p>
+                                <p className='intermediate'>Express</p>
+                                <p className='intermediate'>Node</p>
                             </div>
 
                             <div className='beginner-row'>
                                 <p className='beginner'>Tkinter</p>
-                                <p className='beginner'>Flutter</p>
                             </div>
 
                         </div>
@@ -160,50 +168,59 @@ function AllPages() {
                 <div className='projects'>
                     <div className='app' onClick={() => setShowBloggy(true)}>
                         <label>Bloggy</label>
-                        <img src={bloggy} alt='website' />
+                        <img src={bloggy} alt='Bloggy' />
                         <div className='tech-used'>
                             <label className='tool'>Python</label>
                             <label className='tool'>Flask</label>
                             <label className='tool'>SQLite</label>
                         </div>
                     </div>
-                    <div className='app' onClick={() => setShowTodos(true)}>
-                        <label>Todos</label>
-                        <img src={todos} alt='website' />
+                    <div className='app' onClick={() => setShowSecuroChat(true)}>
+                        <label>SecuroChat</label>
+                        <img src={securochat} alt='SecuroChat' />
                         <div className='tech-used'>
-                            <label className='tool'>Python</label>
-                            <label className='tool'>Flask</label>
-                            <label className='tool'>SQLite</label>
+                            <label className='tool'>React</label>
+                            <label className='tool'>Node.js</label>
+                            <label className='tool'>Socket.io</label>
                         </div>
                     </div>
                     <div className='app' onClick={() => setShowWeather(true)}>
                         <label>Weather Wizard</label>
-                        <img src={weatherwiz} alt='website' />
+                        <img src={weatherwiz} alt='Weather Wizard' />
                         <div className='tech-used'>
-                            <label className='tool'>React.js</label>
+                            <label className='tool'>React</label>
                             <label className='tool'>Weather API</label>
+                        </div>
+                    </div>
+                    <div className='app' onClick={() => setShowTodos(true)}>
+                        <label>Todos</label>
+                        <img src={todos} alt='Todos' />
+                        <div className='tech-used'>
+                            <label className='tool'>Python</label>
+                            <label className='tool'>Flask</label>
+                            <label className='tool'>SQLite</label>
                         </div>
                     </div>
                     <div className='app' onClick={() => setShowSite(true)}>
                         <label>This Website</label>
-                        <img src={site} alt='website' />
+                        <img src={site} alt='This Website' />
                         <div className='tech-used'>
-                            <label className='tool'>React.js</label>
+                            <label className='tool'>React</label>
                             <label className='tool'>Instagram API</label>
                         </div>
                     </div>
                     <div className='app' onClick={() => setShowYT(true)}>
                         <label>YouTube Frontend Clone</label>
-                        <img src={ytclone} alt='website' />
+                        <img src={ytclone} alt='YouTube Clone' />
                         <div className='tech-used'>
-                            <label className='tool'>React.js</label>
+                            <label className='tool'>React</label>
                             <label className='tool'>Router</label>
                             <label className='tool'>Firebase</label>
                         </div>
                     </div>
                     <div className='app' onClick={() => setShowGames(true)}>
                         <label>Games</label>
-                        <img src={games} alt='website' />
+                        <img src={games} alt='Games' />
                         <div className='tech-used'>
                             <label className='tool'>Python</label>
                             <label className='tool'>Pygame</label>
@@ -212,7 +229,7 @@ function AllPages() {
                     </div>
                     <div className='app' onClick={() => setShowAirQM(true)}>
                         <label>Air Quality Monitor</label>
-                        <img src={airqm} alt='website' />
+                        <img src={airqm} alt='Air Quality Monitor' />
                         <div className='tech-used'>
                             <label className='tool'>Python</label>
                             <label className='tool'>Tkinter</label>
@@ -221,7 +238,7 @@ function AllPages() {
                     </div>
                     <div className='app' onClick={() => setShowPWGen(true)}>
                         <label>Password Generator</label>
-                        <img src={pwgen} alt='website' />
+                        <img src={pwgen} alt='Password Generator' />
                         <div className='tech-used'>
                             <label className='tool'>JavaScript</label>
                             <label className='tool'>HTML</label>
@@ -237,13 +254,17 @@ function AllPages() {
                 showBloggy={showBloggy}
                 closeBloggy={closeBloggy}
             />
-            <TodosModal
-                showTodos={showTodos}
-                closeTodos={closeTodos}
+            <SecuroChatModal
+                showSecuroChat={showSecuroChat}
+                closeSecuroChat={closeSecuroChat}
             />
             <WeatherModal
                 showWeather={showWeather}
                 closeWeather={closeWeather}
+            />
+            <TodosModal
+                showTodos={showTodos}
+                closeTodos={closeTodos}
             />
             <WebsiteModal
                 showSite={showSite}
