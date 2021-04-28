@@ -20,16 +20,19 @@ export function BloggyModal({ showBloggy, closeBloggy }) {
 			<br></br>
 			<div className='modal-content'>
 				<p>
-					This is a social networking app created using the <a href="https://flask.palletsprojects.com/en/1.1.x/" target="__blank">Flask</a> web framework in <a href="https://python.org" target="__blank">Python</a>.
-				Users can create blog posts, like blog posts, comment on them, and follow other users. Users have the ability to also update their accounts,
-                set profile pictures, change password, create a bio, and many more! This app also has its own API so that users can display their data from this app on other applications.<br></br>
-				This web application uses <a href="https://python.org" target="__blank">Python</a> as the backend and HTML, CSS, and <a href="https://www.javascript.com" target="__blank">JavaScript</a> as the frontend. It is using a <a href="https://www.sqlite.org/index.html" target="__blank">SQLite</a> database. <br></br><br></br>
+					This is a blog posting platform created using the <a href="https://flask.palletsprojects.com/en/1.1.x/" target="__blank">Flask</a>.
+					Users can login/register, create blogs posts, comment on posts, follow users, like posts, and message other users!
+					This app also has its own API so that users can display their data from this app on other applications.
+				<br></br>
+				It uses HTML, CSS, and <a href="https://javascript.com" target="__blank">JavaScript</a> for the frontend.
+				It is using <a href="https://python.org" target="__blank">Python</a> for the backend and a <a href="https://www.postgresql.org/" target="__blank">PostgreSQL</a> database to store data. <br></br><br></br>
+				It uses <a href="https://socket.io" target="__blank">Socket.io</a> for chatting.
 				The GitHub repository is <a href="https://github.com/arpanneupane19/bloggy-webapp" target="__blank">here</a>!
-				Check it out <a href="https://bloggyapp.pythonanywhere.com" target="__blank">here</a>!
+				Check it out <a href="https://bloggyweb.herokuapp.com" target="__blank">here</a>!
 				</p>
 			</div>
 
-		</div>
+		</div >
 	)
 }
 
@@ -82,6 +85,7 @@ export function WeatherModal({ showWeather, closeWeather }) {
 					I used the <a href="https://openweathermap.org/" target="__blank">OpenWeatherMap</a> API to retrieve weather data.
 					You can enter in any city, and it will give you instant weather details for that city! You can click the temperature to toggle between Fahrenheit & Celsius.
 					The background also changes depending on the temperature!
+					It also has a "Recents" page where you can view recent searches and press the searches to get quick data.
 					<br></br><br></br>
 					Check it out <a href="https://weatherwiz.herokuapp.com" target="__blank">here</a>!
 				</p>
@@ -112,7 +116,7 @@ export function TodosModal({ showTodos, closeTodos }) {
 				Users can sign up, create todos, and mark them complete once they have been finished. They can edit todos if they'd want to change the task.
 				This app is able to perform CRUD operations.
 				This web application uses Python as the backend and HTML & CSS as the frontend. It is using a <a href="https://www.sqlite.org/index.html" target="__blank">SQLite</a> database.<br></br><br></br>
-				The GitHub repository is <a href="https://github.com/arpanneupane19/bloggy-webapp" target="__blank">here</a>!
+				The GitHub repository is <a href="https://github.com/arpanneupane19/TodoListAppV2" target="__blank">here</a>!
 				Check it out <a href="https://todosappv2.pythonanywhere.com" target="__blank">here</a>!
 
 				</p>
@@ -239,7 +243,7 @@ export function AirQMModal({ showAirQM, closeAirQM }) {
 					You can type in a zip code and the app uses an API to get the air quality in that zip code.
 					The background changes depending on the quality of the air.
 					It requires internet connection in order to use it.<br></br><br></br>
-					The GitHub repository is <a href="https://github.com/arpanneupane19/passwordgenerator" target="__blank">here</a>!
+					The GitHub repository is <a href="https://github.com/arpanneupane19/AirQualityMonitor" target="__blank">here</a>!
 					Download it from <a href="https://airqualitymonitor.netlify.app" target="__blank">here</a>!
 				</p>
 			</div>
