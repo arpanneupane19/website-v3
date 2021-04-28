@@ -20,7 +20,7 @@ export function BloggyModal({ showBloggy, closeBloggy }) {
 			<br></br>
 			<div className='modal-content'>
 				<p>
-					This is a blog posting platform created using the <a href="https://flask.palletsprojects.com/en/1.1.x/" target="__blank">Flask</a>.
+					This is a blog posting platform created using <a href="https://flask.palletsprojects.com/en/1.1.x/" target="__blank">Flask</a>.
 					Users can login/register, create blogs posts, comment on posts, follow users, like posts, and message other users!
 					This app also has its own API so that users can display their data from this app on other applications.
 				<br></br>
