@@ -1,22 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './Contact.css';
 import { MdEmail } from "react-icons/md";
-import { GrInstagram } from 'react-icons/gr';
 import { GrYoutube } from 'react-icons/gr';
 import { AiOutlineGithub } from 'react-icons/ai';
 
 function Contact() {
-
-    const [igData, setIgData] = useState([{}]);
-
-    useEffect(() => {
-        fetch('https://graph.instagram.com/<UserID>?fields=username&access_token=<InstagramAccessToken>').then(
-            response => response.json()
-        ).then(data => setIgData(data))
-    }, []);
-
-    const igURL = `https://instagram.com/${igData.username}`;
-
     return (
         <div className='contact'>
             <div className='contact-header-info'>
@@ -25,9 +13,6 @@ function Contact() {
             <div className='contact-links'>
                 <div className='box'>
                     <a href="mailto:arpanneupane19@gmail.com" target='__blank'><MdEmail /> Email</a>
-                </div>
-                <div className='box'>
-                    <a href={igURL} target="__blank"><GrInstagram /> Instagram</a>
                 </div>
                 <div className='box'>
                     <a href="https://youtube.com/ArpanNeupaneProductions" target="__blank"><GrYoutube /> YouTube</a>
