@@ -17,12 +17,12 @@ import weatherwiz from './img/weatherwiz.png';
 import securochat from './img/securochat.png';
 
 function AllPages() {
-    const strings = ['web apps.', 'GUIs.', 'React.', 'Python.', 'Flask.']
+    const strings = ['web programming.', 'content creation.', 'full stack development.', 'teaching.']
 
     const [igData, setIgData] = useState([{}]);
 
     useEffect(() => {
-        fetch('https://graph.instagram.com/<UserID>?fields=username&access_token=<InstagramAccessToken>').then(
+        fetch('https://graph.instagram.com/<USER_ID>?fields=username&access_token=<TOKEN>').then(
             response => response.json()
         ).then(data => setIgData(data))
     }, []);
@@ -71,7 +71,6 @@ function AllPages() {
     return (
         <div>
             {showBloggy || showSecuroChat || showWeather || showTodos || showSite || showGames || showPWGen || showAirQM || showYT ? <div onClick={() => setShowBloggy(false) || setShowSecuroChat(false) || setShowWeather(false) || setShowTodos(false) || setShowSite(false) || setShowGames(false) || setShowPWGen(false) || setShowAirQM(false) || setShowYT(false)} className='backdrop'></div> : null}
-
             {/* Home */}
             <section id='home'>
                 <div className='intro'>
@@ -170,9 +169,9 @@ function AllPages() {
                         <label>Bloggy</label>
                         <img src={bloggy} alt='Bloggy' />
                         <div className='tech-used'>
-                            <label className='tool'>Python</label>
                             <label className='tool'>Flask</label>
-                            <label className='tool'>SQLite</label>
+                            <label className='tool'>Socket.io</label>
+                            <label className='tool'>PostgreSQL</label>
                         </div>
                     </div>
                     <div className='app' onClick={() => setShowSecuroChat(true)}>
@@ -196,9 +195,9 @@ function AllPages() {
                         <label>Todos</label>
                         <img src={todos} alt='Todos' />
                         <div className='tech-used'>
-                            <label className='tool'>Python</label>
                             <label className='tool'>Flask</label>
                             <label className='tool'>SQLite</label>
+                            <label className='tool'>HTML/CSS</label>
                         </div>
                     </div>
                     <div className='app' onClick={() => setShowSite(true)}>
@@ -214,7 +213,6 @@ function AllPages() {
                         <img src={ytclone} alt='YouTube Clone' />
                         <div className='tech-used'>
                             <label className='tool'>React</label>
-                            <label className='tool'>Router</label>
                             <label className='tool'>Firebase</label>
                         </div>
                     </div>
@@ -241,8 +239,7 @@ function AllPages() {
                         <img src={pwgen} alt='Password Generator' />
                         <div className='tech-used'>
                             <label className='tool'>JavaScript</label>
-                            <label className='tool'>HTML</label>
-                            <label className='tool'>CSS</label>
+                            <label className='tool'>HTML/CSS</label>
                         </div>
                     </div>
 
