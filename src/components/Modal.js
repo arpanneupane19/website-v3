@@ -144,8 +144,7 @@ export function WebsiteModal({ showSite, closeSite }) {
 			<div className='modal-content'>
 				<p>
 					This is the third version of my portfolio site. I built it using <a href="https://reactjs.org" target="__blank">React</a>.
-					I used the Instagram API to fetch my username so I could put it at the bottom of this page. The username on the bottom of the page changes
-					if I change my username on Instagram. The URL also changes too.
+					Feel free to leave any feedback!
 					You can view the code <a href="https://github.com/arpanneupane19/personal-websitev3" target="__blank">here</a>!<br>
 					</br><br></br>
 					<a href="https://github.com/arpanneupane19/arpanneupane19.github.io" target="__blank">First version</a> and <a href="https://github.com/arpanneupane19/personal-websitev2" target='__blank'>second version</a>.
