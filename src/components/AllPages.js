@@ -1,7 +1,7 @@
 // Code written by Arpan Neupane
 // Copyright © Arpan Neupane 2021.
 
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Typewriter from 'typewriter-effect';
 import '../components/Allpages.css';
 import { BloggyModal, SecuroChatModal, WeatherModal, TodosModal, WebsiteModal, GamesModal, PWGenModal, AirQMModal, YTModal } from './Modal';
@@ -18,16 +18,6 @@ import securochat from './img/securochat.png';
 
 function AllPages() {
     const strings = ['web programming.', 'content creation.', 'full stack development.', 'teaching.']
-
-    const [igData, setIgData] = useState([{}]);
-
-    useEffect(() => {
-        fetch('https://graph.instagram.com/<USER_ID>?fields=username&access_token=<TOKEN>').then(
-            response => response.json()
-        ).then(data => setIgData(data))
-    }, []);
-
-    const igURL = `https://instagram.com/${igData.username}`;
 
     // Bloggy hooks
     const [showBloggy, setShowBloggy] = useState(false);
@@ -205,7 +195,6 @@ function AllPages() {
                         <img src={site} alt='This Website' />
                         <div className='tech-used'>
                             <label className='tool'>React</label>
-                            <label className='tool'>Instagram API</label>
                         </div>
                     </div>
                     <div className='app' onClick={() => setShowYT(true)}>
@@ -244,7 +233,8 @@ function AllPages() {
                     </div>
 
                 </div><br></br>
-                <p className='ending-msg'>Created with ❤️ by <a href={igURL} target='__blank'>{igData.username}</a></p>
+                <p></p>
+                <p className='ending-msg'>Creataed with ❤️ by <a href='https://instagram.com/arpan.neupane07' target='__blank'>Arpan Neupane</a>.</p>
             </section>
 
             <BloggyModal
