@@ -92,13 +92,13 @@ function AllPages() {
                     <div className='about-info'>
                         <h2 className='about-header'>About Me</h2><br></br>
                         <p>Hello there! My name is Arpan Neupane and I am a 13 year old programmer. I like creating apps and sites that can help people, make life easier, and make it fun. I'm always looking forward to
-                        improving my apps. I also make YouTube videos surrounding technology and programming. I make tutorials, best practices, and also give advice on how to use tools better.
+                            improving my apps. I also make YouTube videos surrounding technology and programming. I make tutorials, best practices, and also give advice on how to use tools better.
                         </p><br></br>
                         <p>
                             If you have any questions or comments regarding my apps, please feel
-                        free to contact me at <a href="mailto:arpanneupane19@gmail.com" target='__blank'>arpanneupane19@gmail.com</a> or by
-                        going to the contact page.
-                    </p>
+                            free to contact me at <a href="mailto:arpanneupane19@gmail.com" target='__blank'>arpanneupane19@gmail.com</a> or by
+                            going to the contact page.
+                        </p>
                     </div>
                 </Fade>
 
@@ -111,10 +111,9 @@ function AllPages() {
                             <div className='proficient-row'>
                                 <p className='proficient'>Python</p>
                                 <p className='proficient'>HTML/CSS</p>
-                                <p className='proficient'>Bash</p>
+                                <p className='proficient'>JavaScript</p>
                             </div>
                             <div className='intermediate-row'>
-                                <p className='intermediate'>JavaScript</p>
                                 <p className='intermediate'>SQL</p>
                             </div>
 
@@ -123,18 +122,18 @@ function AllPages() {
                             </div>
                         </div><br></br>
 
-                        <p className='lang-and-fw'>Frameworks/Libraries</p>
+                        <p className='lang-and-fw'>Frameworks/Libraries/Tools</p>
                         <div className='frameworks'>
 
                             <div className='proficient-row'>
                                 <p className='proficient'>Flask</p>
                                 <p className='proficient'>Pygame</p>
+                                <p className='proficient'>UIKit</p>
                             </div>
 
                             <div className='intermediate-row'>
                                 <p className='intermediate'>React</p>
                                 <p className='intermediate'>React Native</p>
-                                <p className='intermediate'>Express</p>
                                 <p className='intermediate'>Node</p>
                             </div>
 
@@ -234,7 +233,7 @@ function AllPages() {
 
                 </div><br></br>
                 <p></p>
-                <p className='ending-msg'>Creataed with ❤️ by <a href='https://instagram.com/arpan.neupane07' target='__blank'>Arpan Neupane</a>.</p>
+                <p className='ending-msg'>Creataed with ❤️ by <a href='https://instagram.com/arpanneupane07' target='__blank'>Arpan Neupane</a>.</p>
             </section>
 
             <BloggyModal
