@@ -233,7 +233,7 @@ function AllPages() {
 
                 </div><br></br>
                 <p></p>
-                <p className='ending-msg'>Creataed with ❤️ by <a href='https://instagram.com/arpanneupane07' target='__blank'>Arpan Neupane</a>.</p>
+                <p className='ending-msg'>Created with ❤️ by <a href='https://instagram.com/arpanneupane07' target='__blank'>Arpan Neupane</a>.</p>
             </section>
 
             <BloggyModal
